@@ -19,8 +19,8 @@ const formatError = require("../utils/formatError");
  *           details:
  *             type: object
  *         example: {
- *           "issue": "Ошибка",
- *           "details": "Подробности ошибки"
+ *           'issue': 'Ошибка',
+ *           'details': 'Подробности ошибки'
  *         }
  */
 
@@ -42,7 +42,7 @@ const formatError = require("../utils/formatError");
  *               properties:
  *                 message:
  *                   type: string
- *                   example: "Добро пожаловать в наше REST API!"
+ *                   example: 'Добро пожаловать в наше REST API!'
  */
 router.get("/", (req, res) => {
   res.json({ message: "Добро пожаловать в наше REST API!" });
@@ -65,7 +65,7 @@ router.get("/", (req, res) => {
  *               query:
  *                 type: string
  *           example: {
- *             "url": "https://http.cat/200"
+ *             'url': 'https://http.cat/200'
  *           }
  *     responses:
  *       200:

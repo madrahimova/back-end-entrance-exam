@@ -19,8 +19,8 @@ const formatError = require("../utils/formatError");
  *           size:
  *             type: integer
  *         example: {
- *           "capacity": 1048576,
- *           "size": 1024
+ *           'capacity': 1048576,
+ *           'size': 1024
  *         }
  */
 
@@ -28,7 +28,7 @@ const formatError = require("../utils/formatError");
  * @swagger
  * tags:
  *   name: Cache
- *   description: Операции с ресурсом "Cache"
+ *   description: Операции с ресурсом 'Cache'
  */
 
 /**
@@ -69,7 +69,7 @@ router.get("/", function (req, res) {
  *               capacity:
  *                 type: integer
  *           example: {
- *             "capacity": 1048576
+ *             'capacity': 1048576
  *           }
  *     responses:
  *       200:

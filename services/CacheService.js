@@ -36,14 +36,12 @@ class CacheService {
   }
 
   async updateCapacity(capacity) {
-    const message = "Невозможно изменить емкость кеша";
     const oldCapacity = this.cache.capacity;
-
     this.cache.capacity = capacity;
 
     if (this.cache.isFull()) {
       this.cache.capacity = oldCapacity;
-      throw formatError(message, Errors.CACHE_FULL);
+      throw formatError("Невозможно изменить емкость кеша", Errors.CACHE_FULL);
     }
 
     return this.cache;

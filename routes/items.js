@@ -19,9 +19,9 @@ const formatError = require("../utils/formatError");
  *       size:
  *         type: integer
  *     example: {
- *       "data": "Hello World!",
- *       "type": "text/plain",
- *       "size": 12
+ *       'data': 'Hello World!',
+ *       'type': 'text/plain',
+ *       'size': 12
  *     }
  *   ComplexItem:
  *     allOf:
@@ -30,10 +30,10 @@ const formatError = require("../utils/formatError");
  *           id:
  *             type: integer
  *     example: {
- *       "id": 1,
- *       "data": "Hello World!",
- *       "type": "text/plain",
- *       "size": 12
+ *       'id': 1,
+ *       'data': 'Hello World!',
+ *       'type': 'text/plain',
+ *       'size': 12
  *     }
  */
 
@@ -41,7 +41,7 @@ const formatError = require("../utils/formatError");
  * @swagger
  * tags:
  *   name: Items
- *   description: Операции с ресурсом "items"
+ *   description: Операции с ресурсом 'items'
  */
 
 /**

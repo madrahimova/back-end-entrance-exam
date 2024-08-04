@@ -13,8 +13,6 @@ class Cache {
   }
 
   async update(updater) {
-    const message = "Невозможно обновить кеш";
-
     return updater()
       .then(([data, type, size]) => this.write(data, type, size))
       .catch((e) => {
