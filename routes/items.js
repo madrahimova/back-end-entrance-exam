@@ -168,7 +168,6 @@ router.get("/:id", (req, res) => {
  *           schema:
  *             type: object
  *             $ref: '#/definitions/Item'
- *
  *     responses:
  *       201:
  *         description: Созданная запись
