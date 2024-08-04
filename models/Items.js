@@ -68,6 +68,18 @@ class Items {
   }
 
   update(id, data, type, size) {
+    const message = "Невозможно обновить элемент";
+
+    if (typeof id !== "number" || id < 1) {
+      return formatError(message, Errors.INVALID_ID);
+    }
+
+    if (!Object.hasOwn(this.#idMap, id)) {
+      throw formatError(message, Errors.ITEM_NOT_FOUND);
+    }
+
+    delete this.#items[this.#idMap[id]];
+
     const hash = this.#hash(data);
     const item = new Item(id, data, type, size);
 
