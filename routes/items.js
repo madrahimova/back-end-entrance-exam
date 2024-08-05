@@ -333,7 +333,7 @@ router.delete("/:id", (req, res) => {
         }
       } else {
         res.status(500).send({
-          error: formatError("Невозможно удалить элемент", e),
+          error: formatError("Невозможно удалить элемент", e.message),
         });
       }
     });
